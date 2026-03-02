@@ -1,0 +1,68 @@
+:root {
+    --border-grid-real: white;
+    --border-grid-real: gray;
+    --tamanho-grid: 100px;
+
+    --tamanho-pessoa: 10px;
+    --cor-pessoa: green;
+
+    --tamanho-caminhao: 3px;
+    --cor-caminhao: rgb(13, 135, 235);
+
+    --raio-caminhao: 250px;
+}
+
+body {
+    background-color: #2e2e2e;
+    height: 100svh;
+    width: 100vw;
+}
+
+.chunk {
+    border: solid 1px;
+    width: var(--tamanho-grid);
+    height: var(--tamanho-grid);
+    position: absolute;
+    border-color: var(--border-grid-false);
+
+    &.real {
+        border-color: var(--border-grid-real);
+    }
+
+    z-index: 1;
+}
+
+.pessoa {
+    position: absolute;
+    z-index: 2;
+    width: var(--tamanho-pessoa);
+    height: var(--tamanho-pessoa);
+    background-color: var(--cor-pessoa);
+    border-radius: 50%;
+}
+
+.caminhao {
+    position: absolute;
+    /* width: var(--tamanho-caminhao);
+    height: var(--tamanho-caminhao); */
+    padding: var(--tamanho-caminhao);
+    border: var(--cor-caminhao) 2px solid;
+    color: var(--cor-caminhao);
+    border-radius: 20%;
+    z-index: 2;
+
+    cursor: move;
+
+    /* Raio */
+    &::before {
+        content: ' ';
+        border: 2px dashed white;
+        position: inherit;
+        width: var(--raio-caminhao);
+        height: var(--raio-caminhao);
+        display: flex;
+
+        border-radius: 50%;
+        transform: translate(-45%, -45%);
+    }
+}

@@ -6,8 +6,6 @@ document.addEventListener('click', (e) => {
     const y = e.y;
     const target = e.target;
 
-    console.log(e);
-
     new Pessoa(x, y, target);
 });
 

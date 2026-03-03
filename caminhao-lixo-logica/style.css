@@ -29,7 +29,7 @@ body {
         border-color: var(--border-grid-real);
     }
 
-    z-index: 1;
+    z-index: 3;
 }
 
 .pessoa {
@@ -49,7 +49,7 @@ body {
     border: var(--cor-caminhao) 2px solid;
     color: var(--cor-caminhao);
     border-radius: 20%;
-    z-index: 2;
+    z-index: 30;
 
     cursor: move;
 

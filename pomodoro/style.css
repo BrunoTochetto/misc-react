@@ -17,7 +17,7 @@ circle {
     stroke-width: 3px;
     stroke-dasharray: 0, 10, 25, 10;
     stroke-linecap: square;
-    animation: casinoLights 5s linear infinite;
+    animation: none 5s linear infinite;
     background-color: white;
 }
 

@@ -22,6 +22,7 @@ let iniciado = false;
 
 botao.addEventListener("click", (e) => {
     if (iniciado) return;
+    circulo.style.animation = 'casinoLights 5s linear infinite';
 
     iniciado = true;
 
@@ -34,7 +35,7 @@ botao.addEventListener("click", (e) => {
 
 function nextTimer() {
     botao.innerText = pomodoro[indice];
-    setTimeout(dispararAlarme, pomodoro[indice] * 300);
+    setTimeout(dispararAlarme, pomodoro[indice] * 60000);
     
     ++indice;
 }
@@ -47,5 +48,6 @@ function dispararAlarme() {
         indice = 0;
         botao.innerText = "Iniciar";
         iniciado = false;
+        circulo.style.animation = 'none';
     }
 }

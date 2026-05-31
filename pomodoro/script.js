@@ -19,6 +19,7 @@ deixarTamanhoDaTela();
 let pomodoro = [25, 5, 25, 5, 25, 5, 25];
 let indice = 0;
 let iniciado = false;
+const multiplicador = 60000;
 
 botao.addEventListener("click", (e) => {
     if (iniciado) return;
@@ -33,9 +34,19 @@ botao.addEventListener("click", (e) => {
 
 });
 
+function mudarTempoTexto(operacao = -1) {
+    if (botao.innerText <= 0) {
+        return;
+    }
+
+    botao.innerText = pomodoro[indice-1] + operacao;
+    setTimeout(mudarTempoTexto, 1 * multiplicador);
+}
+
 function nextTimer() {
     botao.innerText = pomodoro[indice];
-    setTimeout(dispararAlarme, pomodoro[indice] * 60000);
+    setTimeout(dispararAlarme, pomodoro[indice] * multiplicador);
+    setTimeout(mudarTempoTexto, 1 * multiplicadors);
     
     ++indice;
 }

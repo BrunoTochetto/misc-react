@@ -1,0 +1,84 @@
+@media (min-width: 831px) {
+    .pagina {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .divisao {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        &.metade {
+            width: 50%;
+        }
+
+        &.quarenta {
+            width: 40%;
+        }
+
+        &.sesenta {
+            width: 60%;
+        }
+
+        &.trinta {
+            width: 30%;
+        }
+    }
+
+}
+
+@media (max-width: 830px) {
+    .divisao {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        &.metade {
+            height: 100%;
+            width: 100%;
+        }
+
+        &.quarenta {
+            height: 100%;
+            width: 100%;
+        }
+
+        &.sesenta {
+            height: 100%;
+            width: 100%;
+        }
+
+        &.trinta {
+            height: 100%;
+            width: 100%;
+        }
+
+        &.texto-centro-celular {
+            width: 80%;
+        }
+    }
+
+    .pagina {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        justify-content: space-between
+    } 
+
+    .header-pagina:first-of-type {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    html {
+        font-size: 24px;
+    }
+
+}

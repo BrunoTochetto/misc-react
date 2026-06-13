@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 32px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    
+    p {
+        text-align: left;
+    }
+}
+
+
+.bg-branco {
+    background-color: #f6f6f6;
+}
+
+.bg-laranja {
+    background-color: #ce3c1b;
+    color: white;
+}
+
+.bg-preto {
+    background-color: #000000;
+    color: white;
+}
+
+.pagina {
+    min-height: 90svh;
+    max-height: fit-content;
+    display: flex;
+    padding-top: 10svh;
+    padding-bottom: 10svh;
+
+    gap: 10%;
+
+    letter-spacing: 1px;
+
+
+    &.info {
+        display: flex;
+        padding-bottom: 1svh;
+        align-items: stretch;
+        flex-direction: column;
+                justify-content: space-around;
+
+        & b {
+            font-size: 0.65rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+            font-weight: 600;
+            letter-spacing: -1px;
+
+            & p {
+                font-weight: 500;
+                width: fit-content;
+            }
+        }
+    }
+}
+
+.divisao {
+    &.image {
+        min-height: 20svh;
+    }
+}
+
+
+
+.header-pagina {
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+
+    & p, h1 {
+      text-align: center;  
+      height: fit-content;
+      width: fit-content;
+      margin: 0;
+    }
+}
+
+.centralizar {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p, h1 {
+        text-align: center;
+    }
+}
+
+.grid-infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 72%;
+    row-gap: 50px;
+
+    & .infos {
+        height: fit-content;
+        width: 33%;
+        min-width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.77rem;
+
+        & h3 {
+            font-size: 0.66rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+    }
+
+}
+
+h1 {
+    margin-bottom: 5%;
+}
+
+a {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 3%;
+    margin-top: 10%;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}

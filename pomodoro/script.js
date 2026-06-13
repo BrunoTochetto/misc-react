@@ -46,7 +46,7 @@ function mudarTempoTexto(operacao = -1) {
 function nextTimer() {
     botao.innerText = pomodoro[indice];
     setTimeout(dispararAlarme, pomodoro[indice] * multiplicador);
-    setTimeout(mudarTempoTexto, 1 * multiplicadors);
+    setTimeout(mudarTempoTexto, 1 * multiplicador);
     
     ++indice;
 }

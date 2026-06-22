@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    overflow-x: hidden;
 }
 
 html {
@@ -14,7 +15,16 @@ body {
         text-align: left;
     }
 }
+.bg-video {
+    & video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        ;
+    }
 
+}
 
 .bg-branco {
     background-color: #f6f6f6;
@@ -31,7 +41,7 @@ body {
 }
 
 .pagina {
-    min-height: 90svh;
+    min-height: 80svh;
     max-height: fit-content;
     display: flex;
     padding-top: 10svh;
@@ -69,6 +79,8 @@ body {
 .divisao {
     &.image {
         min-height: 20svh;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -86,6 +98,14 @@ body {
       width: fit-content;
       margin: 0;
     }
+
+    & p {
+        text-shadow: 
+        0px 0px 10px white,
+        1px 1px 10px white,
+        -1px -1px 10px white;
+    }
+    
 }
 
 .centralizar {

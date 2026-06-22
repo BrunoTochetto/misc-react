@@ -11,6 +11,7 @@
 
         &.metade {
             width: 50%;
+
         }
 
         &.quarenta {
@@ -33,6 +34,11 @@
         align-items: center;
         justify-content: center;
         align-content: center;
+
+        &.image img {
+            /* transform: translate(-30%); */
+            width: 100vw;
+        }
 
         &.metade {
             height: 100%;
@@ -65,7 +71,11 @@
         align-items: center;
         padding-left: 4vw;
         padding-right: 4vw;
-        justify-content: space-between
+        justify-content: space-between;
+
+        video  {
+            transform: translateX(-30%);
+        }
     } 
 
     .header-pagina:first-of-type {
